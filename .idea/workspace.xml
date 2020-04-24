@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba27dd54-1262-4b69-b600-1a438243a808" name="Default Changelist" comment="" />
+    <list default="true" id="ba27dd54-1262-4b69-b600-1a438243a808" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/measurement/Feet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/measurement/Feet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1az2vGTFUYynIwV93duGWkWhS4D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,7 +39,7 @@
       <recent name="com.measurement" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.QuantityTest.givenOInchAnd1Inch_ShouldReturnNotEqual">
     <configuration name="QuantityTest.givenOFeetAnd0Feet_ShouldReturnEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -54,8 +60,71 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="QuantityTest.givenOFeetAnd1Feet_ShouldReturnNotEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenOFeetAnd1Feet_ShouldReturnNotEqual&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QuantityTest.givenOInchAnd0Inch_ShouldReturnEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenOInchAnd0Inch_ShouldReturnEqual&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QuantityTest.givenOInchAnd1Inch_ShouldReturnNotEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenOInchAnd1Inch_ShouldReturnNotEqual&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityTest.givenOInchAnd1Inch_ShouldReturnNotEqual" />
+        <item itemvalue="Gradle.QuantityTest.givenOInchAnd0Inch_ShouldReturnEqual" />
+        <item itemvalue="Gradle.QuantityTest.givenOFeetAnd1Feet_ShouldReturnNotEqual" />
         <item itemvalue="Gradle.QuantityTest.givenOFeetAnd0Feet_ShouldReturnEqual" />
       </list>
     </recent_temporary>
@@ -74,21 +143,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1322" height="141" key="GridCell.Tab.0.bottom" timestamp="1587725031440">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1587726298376">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587725031440" />
-    <state width="1322" height="141" key="GridCell.Tab.0.center" timestamp="1587725031440">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587726298376" />
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1587726554032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587725031440" />
-    <state width="1322" height="141" key="GridCell.Tab.0.left" timestamp="1587725031440">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587726554032" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1587726554032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587725031440" />
-    <state width="1322" height="141" key="GridCell.Tab.0.right" timestamp="1587725031440">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587726554032" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1587726554032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587725031440" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587726554032" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1587726554032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587726554032" />
   </component>
 </project>
