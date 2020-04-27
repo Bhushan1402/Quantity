@@ -41,7 +41,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given0FeetAnd1Inch_ShouldReturnEqualLength() {
+    public void given0FeetAnd1Inch_ShouldReturnEqualLength() throws QuantityMeasurementException {
         Length feet1 = new Length(Length.Unit.FEET,0.0);
         Length inch1 = new Length(Length.Unit.INCH,0.0);
         boolean compareCheck = QuantityMeasurement.compare(feet1,inch1);
@@ -49,7 +49,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given1FeetAnd1Inch_ShouldReturnNotEqualLength() {
+    public void given1FeetAnd1Inch_ShouldReturnNotEqualLength() throws QuantityMeasurementException {
         Length feet1 = new Length(Length.Unit.FEET,1.0);
         Length inch1 = new Length(Length.Unit.INCH,1.0);
         boolean compareCheck = QuantityMeasurement.compare(feet1,inch1);
@@ -57,7 +57,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given1FeetAnd1Inch_WhenCompared_ShouldReturnEqualLength() {
+    public void given1FeetAnd1Inch_WhenCompared_ShouldReturnEqualLength() throws QuantityMeasurementException {
         Length feet1 = new Length(Length.Unit.FEET,1.0);
         Length feet2 = new Length(Length.Unit.FEET,1.0);
         boolean compareCheck = QuantityMeasurement.compare(feet1,feet2);
@@ -66,7 +66,7 @@ public class QuantityTest {
 
 
     @Test
-    public void givenFeetAndInchAndSameRef_WhenCompared_ShouldReturnEqualLength() {
+    public void givenFeetAndInchAndSameRef_WhenCompared_ShouldReturnEqualLength() throws QuantityMeasurementException {
         Length feet1 = new Length(Length.Unit.FEET,1.0);
        // Length feet2 = null;
         boolean compareCheck = QuantityMeasurement.compare(feet1,feet1);
@@ -74,7 +74,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given1FeetAnd12Inch_ShouldReturnEqualLength() {
+    public void given1FeetAnd12Inch_ShouldReturnEqualLength() throws QuantityMeasurementException {
         Length feet1 = new Length(Length.Unit.FEET,1.0);
         Length inch1 = new Length(Length.Unit.INCH,12.0);
         boolean compareCheck = QuantityMeasurement.compare(feet1,inch1);
@@ -88,7 +88,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenLengthsInFeetAndYard_WhenEqual_ShouldReturnTrue() {
+    public void givenLengthsInFeetAndYard_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length1 = new Length( Length.Unit.FEET,3);
         Length length2 = new Length( Length.Unit.YARD,1);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -96,7 +96,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue() {
+    public void givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length2 = new Length(Length.Unit.YARD,1);
         Length length1 = new Length(Length.Unit.FEET,3);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -104,7 +104,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue() {
+    public void givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length2 = new Length(Length.Unit.YARD,1);
         Length length1 = new Length(Length.Unit.INCH,36);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -112,7 +112,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given1YardAnd1Feet_WhenEqual_ShouldReturnFalse() {
+    public void given1YardAnd1Feet_WhenEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length2 = new Length(Length.Unit.YARD,1);
         Length length1 = new Length(Length.Unit.FEET,1);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -120,7 +120,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void given1YardAnd1Inch_WhenEqual_ShouldReturnFalse() {
+    public void given1YardAnd1Inch_WhenEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length2 = new Length(Length.Unit.YARD,1);
         Length length1 = new Length(Length.Unit.INCH,1);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -128,7 +128,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenYardAndInch_WhenEqual_ShouldReturnFalse() {
+    public void givenYardAndInch_WhenEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length2 = new Length(Length.Unit.INCH,36);
         Length length1 = new Length(Length.Unit.YARD,1);
         boolean comparision = QuantityMeasurement.compare(length1, length2);
@@ -136,7 +136,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue() {
+    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.INCH,2);
         Length length2 = new Length( Length.Unit.CENTIMETRE,5);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -144,7 +144,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse() {
+    public void givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.INCH,0);
         Length length2 = new Length(Length.Unit.CENTIMETRE,5);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -152,7 +152,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2() {
+    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.INCH,0);
         Length length2 = new Length(Length.Unit.CENTIMETRE,0);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -160,7 +160,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse() {
+    public void givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.FEET,0);
         Length length2 = new Length(Length.Unit.CENTIMETRE,5);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -168,7 +168,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue() {
+    public void givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.FEET,1);
         Length length2 = new Length(Length.Unit.CENTIMETRE,30);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -176,7 +176,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndYard_WhenNotEqual_ShouldReturnFalse() {
+    public void givenCentimetreAndYard_WhenNotEqual_ShouldReturnFalse() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.YARD,0);
         Length length2 = new Length(Length.Unit.CENTIMETRE,5);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -184,7 +184,7 @@ public class QuantityTest {
     }
 
     @Test
-    public void givenCentimetreAndYard_WhenEqual_ShouldReturnTrue() {
+    public void givenCentimetreAndYard_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
         Length length1 = new Length(Length.Unit.YARD,1);
         Length length2 = new Length(Length.Unit.CENTIMETRE,90);
         boolean comparision = QuantityMeasurement.compare(length2, length1);
@@ -192,10 +192,10 @@ public class QuantityTest {
     }
     @Test
     public void givenInchAndInch_WhenAdded_ShouldReturnValueInInch() {
-        Length length1 = new Length(Length.Unit.INCH,1);
-        Length length2 = new Length(Length.Unit.INCH,1);
+        Length length1 = new Length(Length.Unit.INCH,2);
+        Length length2 = new Length(Length.Unit.INCH,2);
         Length totalLength = QuantityMeasurement.addLengths(length1,length2);
-        Assert.assertEquals(new Length(Length.Unit.INCH,2),totalLength);
+        Assert.assertEquals(new Length(Length.Unit.INCH,4),totalLength);
     }
 
     @Test
@@ -220,5 +220,22 @@ public class QuantityTest {
         Length length2 = new Length(Length.Unit.INCH,2);
         Length totalLength = QuantityMeasurement.addLengths(length1,length2);
         Assert.assertEquals(new Length(Length.Unit.INCH,3),totalLength);
+    }
+
+
+    @Test
+    public void givenVolume_InGallonAndLitre_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.GALLON,1);
+        Length volume2 = new Length(Length.Unit.LITRE,3.78);
+        boolean compare = QuantityMeasurement.compare(volume1, volume2);
+        Assert.assertEquals(true, compare);
+    }
+
+    @Test
+    public void givenVolume_InLiterAndMiliLitre_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.LITRE,1);
+        Length volume2 = new Length(Length.Unit.MILLILITRE,1000);
+        boolean compare = QuantityMeasurement.compare(volume1, volume2);
+        Assert.assertEquals(true, compare);
     }
 }
