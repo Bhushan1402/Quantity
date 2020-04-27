@@ -263,4 +263,28 @@ public class QuantityTest {
         double totalLength = quantityMeasurement.addLengths(volume1, volume2);
         Assert.assertEquals(new Length(Length.Unit.LITRE,2),new Length(Length.Unit.LITRE,totalLength));
     }
+
+    @Test
+    public void givenVolume_InKilogramAndGram_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.KILOGRAM,1);
+        Length volume2 = new Length(Length.Unit.GRAM,1000);
+        boolean totalLength = quantityMeasurement.compare(volume1, volume2);
+        Assert.assertEquals(true,totalLength);
+    }
+
+    @Test
+    public void givenVolume_InTonneAndKiloGram_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.TONNE,1);
+        Length volume2 = new Length(Length.Unit.KILOGRAM,1000);
+        boolean totalLength = quantityMeasurement.compare(volume1, volume2);
+        Assert.assertEquals(true,totalLength);
+    }
+
+    @Test
+    public void givenVolume_InTonneAndGram_WhenAdd_ShouldReturnCorrect() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.TONNE,1);
+        Length volume2 = new Length(Length.Unit.GRAM,1000);
+        double totalLength = quantityMeasurement.addLengths(volume1, volume2);
+        Assert.assertEquals(new Length(Length.Unit.KILOGRAM,1001),new Length(Length.Unit.KILOGRAM,totalLength));
+    }
 }

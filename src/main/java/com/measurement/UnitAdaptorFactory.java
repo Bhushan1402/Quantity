@@ -15,8 +15,14 @@ public class UnitAdaptorFactory {
                 return new GallonImpl();
             case CENTIMETRE:
                 return new CentimetreImpl();
+            case GRAM:
+                return new GramImpl();
             case MILLILITRE:
                 return new MilliLitre();
+            case TONNE:
+                return new TonneImpl();
+            case KILOGRAM:
+                return new KilogramImpl();
             default:
                 return null;
         }

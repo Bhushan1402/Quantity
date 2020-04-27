@@ -6,7 +6,7 @@ public class Length {
     public UnitType unitType;
 
    public enum Unit{
-            FEET, INCH, YARD, CENTIMETRE, GALLON, LITRE, MILLILITRE;
+            FEET, INCH, YARD, CENTIMETRE, GALLON, LITRE, MILLILITRE, TONNE,KILOGRAM,GRAM;
         }
 
 

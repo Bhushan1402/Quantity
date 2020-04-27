@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.measurement.QuantityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-27T22:34:37" hostname="SHREE" time="0.521">
+<testsuite name="com.measurement.QuantityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-27T23:10:52" hostname="SHREE" time="0.364">
   <properties/>
-  <testcase name="givenVolume_InLiterAndMiliLitre_WhenAdd_ShouldReturnCorrect" classname="com.measurement.QuantityTest" time="0.521"/>
+  <testcase name="givenVolume_InTonneAndGram_WhenAdd_ShouldReturnCorrect" classname="com.measurement.QuantityTest" time="0.364"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
