@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.measurement.QuantityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-24T11:40:57" hostname="SHREE" time="0.014">
+<testsuite name="com.measurement.QuantityTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-04-27T17:37:11" hostname="SHREE" time="0.074">
   <properties/>
-  <testcase name="given1FeetAnd1Inch_ShouldReturn" classname="com.measurement.QuantityTest" time="0.014"/>
+  <testcase name="givenOFeetAnd1Feet_ShouldReturnNotEqual" classname="com.measurement.QuantityTest" time="0.014"/>
+  <testcase name="given1FeetAnd1Inch_ShouldReturnNotEqualLength" classname="com.measurement.QuantityTest" time="0.007"/>
+  <testcase name="givenOFeetAnd0Feet_ShouldReturnEqual" classname="com.measurement.QuantityTest" time="0.0"/>
+  <testcase name="given1FeetAnd12Inch_ShouldReturnEqualLength" classname="com.measurement.QuantityTest" time="0.001"/>
+  <testcase name="given1FeetAnd12Inch_ShouldReturnEqual" classname="com.measurement.QuantityTest" time="0.001"/>
+  <testcase name="given1FeetAnd1Inch_ShouldReturnNotEqual" classname="com.measurement.QuantityTest" time="0.001"/>
+  <testcase name="given0FeetAnd1Inch_ShouldReturnEqualLength" classname="com.measurement.QuantityTest" time="0.001"/>
+  <testcase name="given1FeetAnd1Inch_WhenCompared_ShouldReturnEqualLength" classname="com.measurement.QuantityTest" time="0.0"/>
+  <testcase name="givenOInchAnd1Inch_ShouldReturnNotEqual" classname="com.measurement.QuantityTest" time="0.001"/>
+  <testcase name="givenOInchAnd0Inch_ShouldReturnEqual" classname="com.measurement.QuantityTest" time="0.002"/>
+  <testcase name="givenFeetAndInchAndSameRef_WhenCompared_ShouldReturnEqualLength" classname="com.measurement.QuantityTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
