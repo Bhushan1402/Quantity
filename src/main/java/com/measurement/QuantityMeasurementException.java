@@ -2,7 +2,7 @@ package com.measurement;
 
 public class QuantityMeasurementException extends Throwable {
     public enum ExceptionType {
-        UnitType_Mismatch,NULL_VALUE
+        UnitType_Mismatch,NULL_VALUE,UNIT_TYPE_MISMATCH;
     }
     public ExceptionType type;
 
