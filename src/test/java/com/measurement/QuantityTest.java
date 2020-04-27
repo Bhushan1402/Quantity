@@ -86,4 +86,52 @@ public class QuantityTest {
         Length inch1 = null;
         Assert.assertNotEquals(feet1,inch1);
     }
+
+    @Test
+    public void givenLengthsInFeetAndYard_WhenEqual_ShouldReturnTrue() {
+        Length length1 = new Length( Length.Unit.FEET,3);
+        Length length2 = new Length( Length.Unit.YARD,1);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(true, comparision);
+    }
+
+    @Test
+    public void givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue() {
+        Length length2 = new Length(Length.Unit.YARD,1);
+        Length length1 = new Length(Length.Unit.FEET,3);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(true, comparision);
+    }
+
+    @Test
+    public void givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue() {
+        Length length2 = new Length(Length.Unit.YARD,1);
+        Length length1 = new Length(Length.Unit.INCH,36);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(true, comparision);
+    }
+
+    @Test
+    public void given1YardAnd1Feet_WhenEqual_ShouldReturnFalse() {
+        Length length2 = new Length(Length.Unit.YARD,1);
+        Length length1 = new Length(Length.Unit.FEET,1);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(false, comparision);
+    }
+
+    @Test
+    public void given1YardAnd1Inch_WhenEqual_ShouldReturnFalse() {
+        Length length2 = new Length(Length.Unit.YARD,1);
+        Length length1 = new Length(Length.Unit.INCH,1);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(false, comparision);
+    }
+
+    @Test
+    public void givenYardAndInch_WhenEqual_ShouldReturnFalse() {
+        Length length2 = new Length(Length.Unit.INCH,36);
+        Length length1 = new Length(Length.Unit.YARD,1);
+        boolean comparision = QuantityMeasurement.compare(length1, length2);
+        Assert.assertEquals(true, comparision);
+    }
 }
