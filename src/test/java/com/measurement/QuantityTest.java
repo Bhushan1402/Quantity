@@ -134,4 +134,60 @@ public class QuantityTest {
         boolean comparision = QuantityMeasurement.compare(length1, length2);
         Assert.assertEquals(true, comparision);
     }
+
+    @Test
+    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue() {
+        Length length1 = new Length(Length.Unit.INCH,2);
+        Length length2 = new Length( Length.Unit.CENTIMETRE,5);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertTrue(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse() {
+        Length length1 = new Length(Length.Unit.INCH,0);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,5);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertFalse(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2() {
+        Length length1 = new Length(Length.Unit.INCH,0);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,0);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertTrue(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse() {
+        Length length1 = new Length(Length.Unit.FEET,0);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,5);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertFalse(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue() {
+        Length length1 = new Length(Length.Unit.FEET,1);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,30);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertTrue(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndYard_WhenNotEqual_ShouldReturnFalse() {
+        Length length1 = new Length(Length.Unit.YARD,0);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,5);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertFalse(comparision);
+    }
+
+    @Test
+    public void givenCentimetreAndYard_WhenEqual_ShouldReturnTrue() {
+        Length length1 = new Length(Length.Unit.YARD,1);
+        Length length2 = new Length(Length.Unit.CENTIMETRE,90);
+        boolean comparision = QuantityMeasurement.compare(length2, length1);
+        Assert.assertTrue(comparision);
+    }
 }

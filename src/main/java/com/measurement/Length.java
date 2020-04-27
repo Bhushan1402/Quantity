@@ -6,7 +6,7 @@ public class Length {
     public Unit unit;
 
     enum Unit{
-        FEET(12), INCH(1),YARD(36);
+        FEET(12), INCH(1),YARD(36),CENTIMETRE(0.4);
         double baseValue;
 
         Unit(double baseValue) {

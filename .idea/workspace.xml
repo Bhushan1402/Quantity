@@ -14,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/measurement/Length$Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/measurement/Length$Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/measurement/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/measurement/Length.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/measurement/QuantityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/measurement/QuantityTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.measurement.QuantityTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.measurement.QuantityTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
@@ -70,13 +69,13 @@
       <recent name="com.measurement" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityTest.given1YardAnd1Inch_WhenEqual_ShouldReturnFalse">
-    <configuration name="QuantityTest.given1YardAnd1Feet_WhenEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QuantityTest.givenCentimetreAndYard_WhenEqual_ShouldReturnTrue">
+    <configuration name="QuantityTest.givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.given1YardAnd1Feet_WhenEqual_ShouldReturnFalse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -91,12 +90,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityTest.given1YardAnd1Inch_WhenEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityTest.givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.given1YardAnd1Inch_WhenEqual_ShouldReturnFalse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -111,12 +110,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityTest.givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityTest.givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -131,12 +130,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityTest.givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityTest.givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -151,12 +150,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityTest.givenLengthsInYardAndinche_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityTest.givenCentimetreAndYard_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenLengthsInYardAndinche_WhenEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.measurement.QuantityTest.givenCentimetreAndYard_WhenEqual_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.QuantityTest.given1YardAnd1Inch_WhenEqual_ShouldReturnFalse" />
-        <item itemvalue="Gradle.QuantityTest.given1YardAnd1Feet_WhenEqual_ShouldReturnFalse" />
-        <item itemvalue="Gradle.QuantityTest.givenLengthsInYardAndInch_WhenEqual_ShouldReturnTrue" />
-        <item itemvalue="Gradle.QuantityTest.givenLengthsInYardAndinche_WhenEqual_ShouldReturnTrue" />
-        <item itemvalue="Gradle.QuantityTest.givenLengthsInYardAndFeet_WhenEqual_ShouldReturnTrue" />
+        <item itemvalue="Gradle.QuantityTest.givenCentimetreAndYard_WhenEqual_ShouldReturnTrue" />
+        <item itemvalue="Gradle.QuantityTest.givenCentimetreAndFeet_WhenEqual_ShouldReturnTrue" />
+        <item itemvalue="Gradle.QuantityTest.givenCentimetreAndFeet_WhenNotEqual_ShouldReturnFalse" />
+        <item itemvalue="Gradle.QuantityTest.givenCentimetreAndInch_WhenEqual_ShouldReturnTrue_2" />
+        <item itemvalue="Gradle.QuantityTest.givenCentimetreAndInch_WhenNotEqual_ShouldReturnFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -203,22 +202,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1587727541054" />
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1588010407496">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1588011966577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588010407496" />
-    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1588010407496">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588011966577" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1588011966577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588010407496" />
-    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1588010407496">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588011966577" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1588011966577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588010407496" />
-    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1588010407496">
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588011966577" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1588011966577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588010407496" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588011966577" />
     <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1587992630190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
