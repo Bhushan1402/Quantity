@@ -190,4 +190,35 @@ public class QuantityTest {
         boolean comparision = QuantityMeasurement.compare(length2, length1);
         Assert.assertTrue(comparision);
     }
+    @Test
+    public void givenInchAndInch_WhenAdded_ShouldReturnValueInInch() {
+        Length length1 = new Length(Length.Unit.INCH,1);
+        Length length2 = new Length(Length.Unit.INCH,1);
+        Length totalLength = QuantityMeasurement.addLengths(length1,length2);
+        Assert.assertEquals(new Length(Length.Unit.INCH,2),totalLength);
+    }
+
+    @Test
+    public void givenFeetAndInch_WhenAdded_ShouldReturnValueInInch() {
+        Length length1 = new Length(Length.Unit.FEET,1);
+        Length length2 = new Length(Length.Unit.INCH,2);
+        Length totalLength = QuantityMeasurement.addLengths(length1,length2);
+        Assert.assertEquals(new Length(Length.Unit.INCH,14),totalLength);
+    }
+
+    @Test
+    public void givenFeetAndFeet_WhenAdded_ShouldReturnValueInInch() {
+        Length length1 = new Length(Length.Unit.FEET,1);
+        Length length2 = new Length(Length.Unit.FEET,1);
+        Length totalLength = QuantityMeasurement.addLengths(length1,length2);
+        Assert.assertEquals(new Length(Length.Unit.INCH,24),totalLength);
+    }
+
+    @Test
+    public void givenCentimeterAndInch_WhenAdded_ShouldReturnValueInInch() {
+        Length length1 = new Length(Length.Unit.CENTIMETRE,2.5);
+        Length length2 = new Length(Length.Unit.INCH,2);
+        Length totalLength = QuantityMeasurement.addLengths(length1,length2);
+        Assert.assertEquals(new Length(Length.Unit.INCH,3),totalLength);
+    }
 }
