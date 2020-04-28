@@ -287,4 +287,12 @@ public class QuantityTest {
         double totalLength = quantityMeasurement.addLengths(volume1, volume2);
         Assert.assertEquals(new Length(Length.Unit.KILOGRAM,1001),new Length(Length.Unit.KILOGRAM,totalLength));
     }
+
+    @Test
+    public void givenVolume_InCelsiusAndFahrenheit_WhenEqual_ShouldReturnTrue() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.CELSIUS,100);
+        Length volume2 = new Length(Length.Unit.FAHRENHEIT,212);
+        boolean totalLength = quantityMeasurement.compare(volume1, volume2);
+        Assert.assertTrue(totalLength);
+    }
 }

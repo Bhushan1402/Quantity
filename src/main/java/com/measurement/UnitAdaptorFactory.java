@@ -23,6 +23,10 @@ public class UnitAdaptorFactory {
                 return new TonneImpl();
             case KILOGRAM:
                 return new KilogramImpl();
+            case CELSIUS:
+                return new CelsiusImpl();
+            case FAHRENHEIT:
+                return new FahrenheitImpl();
             default:
                 return null;
         }
