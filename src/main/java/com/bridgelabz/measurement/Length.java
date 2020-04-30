@@ -9,8 +9,6 @@ public class Length {
             FEET, INCH, YARD, CENTIMETRE, GALLON, LITRE, MILLILITRE, TONNE,KILOGRAM,GRAM,CELSIUS,FAHRENHEIT;
         }
 
-
-
         public Length( Unit unit,double quantity) {
             IUnitAdaptor unitAdaptor = UnitAdaptorFactory.getObject(unit);
             this.quantity = unitAdaptor.compare(unit,quantity);

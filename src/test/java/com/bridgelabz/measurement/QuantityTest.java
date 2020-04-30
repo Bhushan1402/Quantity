@@ -9,7 +9,7 @@ public class QuantityTest {
     QuantityMeasurement quantityMeasurement = null;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         quantityMeasurement = new QuantityMeasurement();
     }
 
@@ -204,7 +204,7 @@ public class QuantityTest {
         Length length1 = new Length(Length.Unit.INCH,2);
         Length length2 = new Length(Length.Unit.INCH,2);
         double totalLength = quantityMeasurement.addLengths(length1,length2);
-        Assert.assertEquals(new Length(Length.Unit.INCH,4),totalLength);
+        Assert.assertEquals(new Length(Length.Unit.INCH,4),new Length(Length.Unit.INCH,totalLength));
     }
 
     @Test
@@ -212,7 +212,7 @@ public class QuantityTest {
         Length length1 = new Length(Length.Unit.FEET,1);
         Length length2 = new Length(Length.Unit.INCH,2);
         double totalLength = quantityMeasurement.addLengths(length1,length2);
-        Assert.assertEquals(new Length(Length.Unit.INCH,14),totalLength);
+        Assert.assertEquals(new Length(Length.Unit.INCH,14),new Length(Length.Unit.INCH,totalLength));
     }
 
     @Test
@@ -220,7 +220,7 @@ public class QuantityTest {
         Length length1 = new Length(Length.Unit.FEET,1);
         Length length2 = new Length(Length.Unit.FEET,1);
         double totalLength = quantityMeasurement.addLengths(length1,length2);
-        Assert.assertEquals(new Length(Length.Unit.INCH,24),totalLength);
+        Assert.assertEquals(new Length(Length.Unit.INCH,24),new Length(Length.Unit.INCH,totalLength));
     }
 
     @Test
@@ -228,7 +228,7 @@ public class QuantityTest {
         Length length1 = new Length(Length.Unit.CENTIMETRE,2.5);
         Length length2 = new Length(Length.Unit.INCH,2);
         double totalLength = quantityMeasurement.addLengths(length1,length2);
-        Assert.assertEquals(new Length(Length.Unit.INCH,3),totalLength);
+        Assert.assertEquals(new Length(Length.Unit.INCH,3),new Length(Length.Unit.INCH,totalLength));
     }
 
 
@@ -293,6 +293,39 @@ public class QuantityTest {
         Length volume1 = new Length(Length.Unit.CELSIUS,100);
         Length volume2 = new Length(Length.Unit.FAHRENHEIT,212);
         boolean totalLength = quantityMeasurement.compare(volume1, volume2);
+        System.out.println(totalLength);
         Assert.assertTrue(totalLength);
+    }
+
+    @Test
+    public void givenVolume_InCelsiusAndFahrenheit_WhenEqual_ShouldReturn() throws QuantityMeasurementException {
+        Length volume1 = new Length(Length.Unit.CELSIUS,0);
+        Length volume2 = new Length(Length.Unit.FAHRENHEIT,32);
+        boolean totalLength = quantityMeasurement.compare(volume1, volume2);
+        System.out.println(totalLength);
+        Assert.assertTrue(totalLength);
+    }
+
+    @Test
+    public void givenVolume_InCelsiusAndInch_WhenEqual_ShouldReturnTrue() {
+        Length volume1 = new Length(Length.Unit.CELSIUS,100);
+        Length volume2 = new Length(Length.Unit.INCH,212);
+        try {
+            quantityMeasurement.compare(volume1, volume2);
+        } catch (QuantityMeasurementException e) {
+           Assert.assertEquals(QuantityMeasurementException.ExceptionType.UNIT_TYPE_MISMATCH,e.type);
+        }
+
+    }
+
+    @Test
+    public void givenVolume_InCelsiusAndInchNull_WhenEqual_ShouldReturnTrue() {
+        Length volume1 = new Length(Length.Unit.CELSIUS,100);
+        Length volume2 = null;
+        try {
+            quantityMeasurement.compare(volume1, volume2);
+        } catch (QuantityMeasurementException e) {
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE,e.type);
+        }
     }
 }
